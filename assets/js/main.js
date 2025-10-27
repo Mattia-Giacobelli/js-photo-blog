@@ -10,7 +10,10 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
     .then(response => response.json())
     .then(data => {
         //-Save the array
-        pictures.push(data)
+        for (let i = 0; i < 6; i++) {
+            const element = data[i];
+            pictures.push(element)
+        }
     })
 console.log(pictures);
 
