@@ -18,10 +18,23 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
 console.log(pictures);
 
 
-
-
-//Cycle into the array to generate a card with a picture
-//-ForEach cycle
+//Create a function to generate a card for each picture
+function genCard(picture) {
+    //Cycle into the array to generate a card with a picture
+    const card = `<div class="col">
+    <div class="mycard">
+    <img src="${picture}" alt="">
+    <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <img class="pin" src="./assets/img/pin.svg" alt="">
+    </div>`
+    
+}
 //-Save custom card markup
+//-ForEach cycle
+
 //-Save the new cards into the rowEl
+//Call the function to generate cards
+
 
