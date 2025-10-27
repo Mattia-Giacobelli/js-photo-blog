@@ -5,7 +5,26 @@
     header {
         min-height: 150px;
         background-color: gray;
-        
+
+    }
+
+    main {
+        background-color: bisque;
+
+        .container {
+            min-height: 1000px;
+            background-color: aqua;
+        }
+
+        .col-12 {
+            min-height: 300px;
+            background-color: blueviolet;
+
+            span {
+                min-height: 50px;
+                background-color: brown;
+            }
+        }
     }
 }
 
@@ -18,9 +37,33 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+
 /*Utilities*/
 
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.col {
+    width: 100%;
+    
+}
 
 /*Typography*/
 
@@ -33,9 +76,9 @@ h1 {
 
 span {
     font-family: "Sometype Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
 
 
@@ -43,8 +86,34 @@ span {
 
 header {
 
+    background-image: url(../img/wall.png);
+
     h1 {
+        text-align: center;
         font-size: 4rem;
         padding: 2rem;
     }
+}
+
+
+/*MAIN*/
+
+main {
+    background-image: url(../img/cork.png);
+    padding-top: 3rem;
+
+    .mycard {
+        padding: 1rem;
+        background-color: white;
+        position: relative;
+
+        .pin {
+            width: 10%;
+            position: absolute;
+            top: -15px;
+            left: 44%;
+        }
+    }
+
+
 }

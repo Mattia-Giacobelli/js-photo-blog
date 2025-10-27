@@ -1,0 +1,25 @@
+/*MOBILE FIRST*/
+
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .col {
+        width: calc((100% / 2) - 0.5rem);
+    }
+}
+
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 1024px;
+    }
+
+    .col {
+        width: calc((100% / 3) - 2rem / 3);
+    }
+}
