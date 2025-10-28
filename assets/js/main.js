@@ -30,8 +30,10 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
         const ovBtn = document.querySelector('button')
         console.log(skateCard, overlay);
 
+        //Create eventlistener to open overlay with specific card image
+
         skateCard.addEventListener('click', () => {
-            //const img = document.getElementsByClassName('1')
+            //const img = document.querySelector('.1')
             overlay.style = "display: block"
             const ovImg = document.querySelector('.ov-img')
             ovImg.src = img.src
@@ -72,7 +74,7 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
             ovImg.src = img.src
 
         })
-
+        //Close overlay
         ovBtn.addEventListener('click', (e) => {
             e.preventDefault()
             overlay.style = "display: none"
