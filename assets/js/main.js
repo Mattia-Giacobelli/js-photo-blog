@@ -54,3 +54,12 @@ genCards()
 //Create a function to get the card img src and stamp into the overlay
 
 //Create event listener for each card and call the previous functions
+const skateCard = document.getElementById('1')
+const overlay = document.getElementById('overlay')
+console.log(skateCard, overlay);
+
+
+skateCard.addEventListener('click', () => {
+    console.log('ciao');
+    
+})
