@@ -24,14 +24,17 @@ function genCards() {
         fetch('https://lanciweb.github.io/demo/api/pictures/')
             .then(response => response.json())
             .then(data => {
-                console.log(data[i].url);
+                console.log(data[i].url)
 
                 card = `<div class="col">
                 <div class="mycard">
                 <img src="${data[i].url}" alt="">
-                <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <div class="date">
+                ${data[i].date}
                 </div>
+                <h2>
+                ${data[i].title.toUpperCase()}
+                </h2>
                 <img class="pin" src="./assets/img/pin.svg" alt="">
                 </div>`
                 //Stamp in page
@@ -43,4 +46,5 @@ function genCards() {
 
 genCards()
 
-
+const prova = 'f'
+prova.toUpperCase

@@ -57,7 +57,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .col {
@@ -68,16 +68,15 @@ h1 {
 /*Typography*/
 
 h1 {
-    font-family: "Edu TAS Beginner", cursive;
+    font-family: "Edu TAS Beginner", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
 
-span {
+h2, .date {
     font-family: "Sometype Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: italic;
 }
 
@@ -106,6 +105,15 @@ main {
         padding: 1rem;
         background-color: white;
         position: relative;
+
+        .date {
+            color: gray;
+            font-weight: 100;
+        }
+
+        h2 {
+            font-weight: 700;
+        }
 
         .pin {
             width: 10%;
