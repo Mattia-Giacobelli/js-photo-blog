@@ -33,42 +33,42 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
         //Create eventlistener to open overlay with specific card image
 
         skateCard.addEventListener('click', () => {
-            //const img = document.querySelector('.1')
+            const img = skateCard.querySelector('img')
             overlay.style = "display: block"
             const ovImg = document.querySelector('.ov-img')
             ovImg.src = img.src
 
         })
         passeggiataCard.addEventListener('click', () => {
-            //const img = document.getElementsByClassName('1')
+            const img = passeggiataCard.querySelector('img')
             overlay.style = "display: block"
             const ovImg = document.querySelector('.ov-img')
             ovImg.src = img.src
 
         })
         alpiCard.addEventListener('click', () => {
-            //const img = document.getElementsByClassName('1')
+            const img = alpiCard.querySelector('img')
             overlay.style = "display: block"
             const ovImg = document.querySelector('.ov-img')
             ovImg.src = img.src
 
         })
         sagraCard.addEventListener('click', () => {
-            //const img = document.getElementsByClassName('1')
+            const img = sagraCard.querySelector('img')
             overlay.style = "display: block"
             const ovImg = document.querySelector('.ov-img')
             ovImg.src = img.src
 
         })
         waterCard.addEventListener('click', () => {
-            //const img = document.getElementsByClassName('1')
+            const img = waterCard.querySelector('img')
             overlay.style = "display: block"
             const ovImg = document.querySelector('.ov-img')
             ovImg.src = img.src
 
         })
         rivieraCard.addEventListener('click', () => {
-            //const img = document.getElementsByClassName('1')
+            const img = rivieraCard.querySelector('img')
             overlay.style = "display: block"
             const ovImg = document.querySelector('.ov-img')
             ovImg.src = img.src
