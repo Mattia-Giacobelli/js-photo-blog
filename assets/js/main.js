@@ -27,7 +27,7 @@ function genCards() {
                 console.log(data[i].url)
 
                 card = `<div class="col">
-                <div class="mycard">
+                <div class="mycard" id="${data[i].id}">
                 <img src="${data[i].url}" alt="">
                 <div class="date">
                 ${data[i].date}
@@ -35,7 +35,7 @@ function genCards() {
                 <h2>
                 ${data[i].title.toUpperCase()}
                 </h2>
-                <img class="pin" src="./assets/img/pin.svg" alt="">
+                <img  class="pin" src="./assets/img/pin.svg" alt="">
                 </div>`
                 //Stamp in page
                 rowEl.innerHTML += card
@@ -46,5 +46,11 @@ function genCards() {
 
 genCards()
 
-const prova = 'f'
-prova.toUpperCase
+
+//Open/close the overlay
+
+//Create a function to change overlay's display property
+
+//Create a function to get the card img src and stamp into the overlay
+
+//Create event listener for each card and call the previous functions
